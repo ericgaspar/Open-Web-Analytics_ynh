@@ -50,7 +50,7 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     url = "https://github.com/Open-Web-Analytics/Open-Web-Analytics/releases/download/1.8.1/owa_1.8.1_packaged.tar"
-    sha256 = "0b33ac868d14d8b3aea7aa8e6382de9cf3f7acf0f340b932bd9fa2db4b7563d04"
+    sha256 = "b33ac868d14d8b3aea7aa8e6382de9cf3f7acf0f340b932bd9fa2db4b7563d04"
 
     # autoupdate.strategy = "latest_github_tag"
 
