@@ -73,7 +73,7 @@ define('OWA_PUBLIC_URL', 'http://__DOMAIN____PATH__');
  * 'development' - logs al sorts of useful debug to log file.
  */
 
-define('OWA_ERROR_HANDLER', ''production');
+//define('OWA_ERROR_HANDLER', ''production');
 
 /**
  * LOG PHP ERRORS
