@@ -59,7 +59,7 @@ define('OWA_AUTH_SALT', 'yourauthsaltgoeshere');
  * Don't forget the slash at the end.
  */
  
-define('OWA_PUBLIC_URL', 'http://__DOMAIN____PATH__');
+define('OWA_PUBLIC_URL', 'http://__DOMAIN__/');
 
 /**
  * OWA ERROR HANDLER
