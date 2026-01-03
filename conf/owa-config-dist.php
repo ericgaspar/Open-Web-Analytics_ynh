@@ -59,7 +59,7 @@ define('OWA_AUTH_SALT', 'yourauthsaltgoeshere');
  * Don't forget the slash at the end.
  */
  
-define('OWA_PUBLIC_URL', 'http://__DOMAIN__/');
+define('OWA_PUBLIC_URL', 'http://__DOMAIN____PATH__');
 
 /**
  * OWA ERROR HANDLER
@@ -89,7 +89,7 @@ define('OWA_LOG_PHP_ERRORS', true);
  * Override setting to cache objects. Caching will increase performance.
  */
 
-//define('OWA_CACHE_OBJECTS', true);
+define('OWA_CACHE_OBJECTS', true);
 
 /**
  * CONFIGURATION ID
