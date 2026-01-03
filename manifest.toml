@@ -4,7 +4,7 @@ packaging_format = 2
 
 id = "open-web-analytics"
 name = "Open Web Analytics"
-description.en = "Explain in *a few (10~15) words* the purpose of the app or what it actually does (it is meant to give a rough idea to users browsing a catalog of 100+ apps)"
+description.en = "Open source alternative to commercial tools such as Google Analytics"
 description.fr = "Expliquez en *quelques* (10~15) mots l'utilité de l'app ou ce qu'elle fait (l'objectif est de donner une idée grossière pour des utilisateurs qui naviguent dans un catalogue de 100+ apps)"
 
 version = "1.0~ynh1"
@@ -12,12 +12,12 @@ version = "1.0~ynh1"
 maintainers = ["eric_G"]
 
 [upstream]
-license = "free"
+license = "GPL-2.0"
 website = "https://www.openwebanalytics.com/"
 demo = "https://demo.example.com"
 admindoc = "https://yunohost.org/packaging_apps"
 userdoc = "https://yunohost.org/apps"
-code = "https://some.forge.com/example/example"
+code = "https://github.com/Open-Web-Analytics/Open-Web-Analytics"
 
 [integration]
 yunohost = ">= 12.1.17"
@@ -37,7 +37,6 @@ ram.runtime = "50M"
     type = "domain"
 
     [install.path]
-    # this is a generic question - ask strings are automatically handled by YunoHost's core
     type = "path"
     default = "/example"
 
@@ -45,28 +44,13 @@ ram.runtime = "50M"
     type = "group"
     default = "visitors"
 
-    [install.language]
-    ask.en = "Choose the application language"
-    ask.fr = "Choisissez la langue de l'application"
-    type = "select"
-    choices = ["fr", "en"]
-    default = "fr"
-
-    [install.admin]
-    type = "user"
-
-    [install.password]
-    help.en = "Use the help field to add an information for the admin about this question."
-    help.fr = "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
-    type = "password"
-
 [resources]
 
     [resources.sources]
 
     [resources.sources.main]
     url = "https://github.com/Open-Web-Analytics/Open-Web-Analytics/releases/download/1.8.1/owa_1.8.1_packaged.tar"
-    sha256 = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    sha256 = "0b33ac868d14d8b3aea7aa8e6382de9cf3f7acf0f340b932bd9fa2db4b7563d04"
 
     # autoupdate.strategy = "latest_github_tag"
 
@@ -74,15 +58,13 @@ ram.runtime = "50M"
 
     [resources.install_dir]
 
-    [resources.data_dir]
+    #[resources.data_dir]
 
     [resources.permissions]
     main.url = "/"
 
-    [resources.ports]
-
     [resources.apt]
-    packages = "mariadb-server, php8.3-bar"
+    packages = "mariadb-server, php8.3-mysqli"
 
     [resources.database]
     type = "mysql"
