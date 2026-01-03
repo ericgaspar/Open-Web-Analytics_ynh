@@ -73,7 +73,7 @@ define('OWA_PUBLIC_URL', 'http://__DOMAIN__/');
  * 'development' - logs al sorts of useful debug to log file.
  */
 
-//define('OWA_ERROR_HANDLER', 'development');
+define('OWA_ERROR_HANDLER', ''production');
 
 /**
  * LOG PHP ERRORS
@@ -81,7 +81,7 @@ define('OWA_PUBLIC_URL', 'http://__DOMAIN__/');
  * Log all php errors to OWA's error log file. Only do this to debug.
  */
 
-//define('OWA_LOG_PHP_ERRORS', true);
+define('OWA_LOG_PHP_ERRORS', true);
  
 /**
  * OBJECT CACHING
